@@ -1,11 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+// Replace 'YOUR-REPO-NAME' with your actual GitHub repository name
 export default defineConfig({
   plugins: [react()],
-  // Optional: Enable fast refresh & optimize dependencies
-  optimizeDeps: {
-    include: ['framer-motion', '@react-three/fiber', '@react-three/drei', 'lucide-react']
-  }
+  base: '/showcase website/', // ← CHANGE THIS TO YOUR EXACT REPO NAME
 })
